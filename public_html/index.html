@@ -6,11 +6,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
-<nav class="navbar navbar-light navbar-expand-lg fixed-top">
+<div class="parallax-mirror" style="visibility: visible; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: visible; height: 615px; width: 528px; transform: translate3d(0px, -100px, 0px);">
+    <img class="parallax-slider" src="mountain.jpg" style="position: center; height: 451px; width: 1100px; max-width: none; transform: translate3d(-74px, 80px, 0px);">
+</div>
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
     <div class="container">
 
         <!-- Navbar: Brand -->
-        <a class="navbar-brand d-lg-none" href="index.html">Natures Best Angle</a>
+        <a class="navbar-brand d-lg-none" href="index.html">Touché</a>
 
         <!-- Navbar: Toggler -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,34 +25,35 @@
 
             <!-- Navbar navigation: Left -->
             <ul class="navbar-nav mr-auto">
-
+                <li class="nav-item">
+                    <a class="nav-link" href="about-us.html">About Us</a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="http://example.com" id="nav-item__menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Environments
+                        Menu
                     </a>
                     <div class="dropdown-menu" aria-labelledby="nav-item__menu">
-                        <a class="dropdown-item" href="menu.html">Mountains</a>
-                        <a class="dropdown-item" href="menu_no-images.html">Rivers</a>
+                        <a class="dropdown-item" href="menu.html">Menu: Standard</a>
+                        <a class="dropdown-item" href="menu_no-images.html">Menu: No Images</a>
                     </div>
                 </li>
-
+                <li class="nav-item">
+                    <a class="nav-link" href="reservation.html">Reservation</a>
+                </li>
             </ul>
 
             <!-- Navbar: Brand -->
             <a class="navbar-brand d-none d-lg-flex" href="index.html">
-                Natures Best Angle
+                Touché
             </a>
 
             <!-- Navbar navigation: Right -->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="about-us.html">Artists</a>
+                    <a class="nav-link" href="news-and-events.html">News &amp; Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="news-and-events.html">Geo Pics</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="gallery.html">Images</a>
+                    <a class="nav-link" href="gallery.html">Gallery</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact-us.html">Contact</a>
@@ -60,7 +64,85 @@
 
     </div> <!-- / .container -->
 </nav>
+<section class="section section_welcome" data-parallax="scroll" data-image-src="mountain.jpg">
 
+    <!-- Content -->
+    <div class="section_welcome__main">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+
+                    <!-- Heading -->
+                    <h2 class="section__preheading section_welcome__preheading text-center text-muted">
+                        <span class="text-primary">Café</span> / Restaurant
+                    </h2>
+                    <h1 class="section__heading section_welcome__heading text-center">
+                        Touché
+                    </h1>
+                    <p class="section__subheading section_welcome__subheading text-center text-muted">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non illo, alias animi iusto neque, sint corrupti? Laudantium, dignissimos id excepturi facilis, facere saepe quasi placeat praesentium ipsa sapiente illo molestiae?
+                    </p>
+
+                    <!-- Button -->
+                    <div class="text-center">
+                        <a href="#section_reservation" class="btn btn-primary text-white">
+                            Make reservation
+                        </a>
+                    </div>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </div>
+
+    <!-- Footer -->
+    <div class="section_welcome__footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md">
+
+                    <!-- Social links -->
+                    <ul class="section_welcome__footer__social text-center text-lg-left">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md">
+
+                    <!-- Address -->
+                    <div class="section_welcome__footer__address text-center text-lg-right">
+                        <i class="fas fa-map-marker-alt"></i> 1234 Altschul, New York, NY 10027-0000
+                    </div>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </div>
+
+</section>
+<div id="geoPics">
+
+</div>
+<div id="images">
+
+</div>
+<div id="contact">
+
+</div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
