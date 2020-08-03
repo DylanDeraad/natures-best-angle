@@ -2,9 +2,27 @@
     margin-top: 3em;
     padding: 1em;
 }
-
+#tittle {
+   text-align: center;
+}
 
 #geoPics {
     border: 4px solid black;
-    margin: 3em 0 3em 0;
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
 }
+#searchEnvironment {
+    display: flex;
+    align-items: flex-start;
+    justify-items: center;
+    padding: 10px 5px 20px 10px;
+    flex-shrink: 1;
+}
+#popularEnvironments {
+    display: flex;
+    flex-flow: row wrap;
+}
+#images
