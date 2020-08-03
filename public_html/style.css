@@ -1,6 +1,7 @@
 #allButNav {
     margin-top: 3em;
     padding: 1em;
+    background-color: #F8F5E3;
 }
 #tittle {
    text-align: center;
@@ -25,4 +26,11 @@
     display: flex;
     flex-flow: row wrap;
 }
-#images
+#bottom {
+    border-top: 3px solid black;
+    padding: 1em;
+    background-color: #E8DBBF;
+}
+#images {
+    margin-left: 10px;
+}
