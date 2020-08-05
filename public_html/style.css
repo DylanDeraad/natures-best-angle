@@ -28,6 +28,7 @@
 #popularEnvironments {
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
 }
 #bottom {
     border-top: 3px solid black;
