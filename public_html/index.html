@@ -8,6 +8,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+    <!-- Navbar -->
     <div class="container">
 
         <!-- Navbar: Brand -->
@@ -29,8 +30,8 @@
                         Environments
                     </a>
                     <div class="dropdown-menu" aria-labelledby="nav-item__menu">
-                        <a class="dropdown-item" href="...">Mountains</a>
-                        <a class="dropdown-item" href="...">Rivers</a>
+                        <a class="dropdown-item" href="#mountain">Mountains</a>
+                        <a class="dropdown-item" href="#bottom">Rivers</a>
                     </div>
                 </li>
 
@@ -61,25 +62,27 @@
 
     </div> <!-- / .container -->
 </nav>
+
 <main id="allButNav" role="main">
     <h1 id="tittle">Natures Best Angle</h1>
     <div id="artist">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div id="carouselArtistBio" class="carousel slide" data-ride="carousel">
+                    <h2>Featured Artists</h2>
+                    <div id="carouselArtistBio" class="carousel" data-ride="carousel">
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="selfPort.jpeg" class="d-block w-100"  alt="firstArtist">
+                            <div class="carousel-item active" data-interval="200000">
+                                <img src="selfPort.jpeg" class="d-block w-100 h-100"  alt="firstArtist">
                                 <p id="firstArtistName">Artist Dylan DeRaad</p>
                                 <p id="firstArtistInfo">contact info</p>
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-interval="200000">
                                 <img src="jasmin-chew.jpg" class="d-block w-100" alt="artistJasmin">
                                 <p id="artistJasName">Jasmin Chew</p>
                                 <p id="artistJInfo">IG: @majestical_jasmin</p>
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-interval="200000">
                                 <img src="mikeBaker.jpg" class="d-block w-100" alt="artistMike">
                                 <p id="artistMikeName">Mike Baker</p>
                                 <p id="artistMikeInfo">unsplash.com/@bikemaker</p>
@@ -124,25 +127,25 @@
                     <div id="popularEnvironments">
                         <div class="card" style="width: 10rem;">
                             <img src="mountain.jpg" class="card-img-top" alt="m">
-                            <div class="card-body">
-                                <p class="card-text">mountains</p>
+                            <div class="card-img-overlay">
+                                <a id="MntBtn" href="#images" class="btn btn-dark">Mountains</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 10rem;">
+                            <img src="stock-river.jpg" class="card-img-top" alt="river">
+                            <div class="card-img-overlay">
+                                <a id="RvrBtn" href="#images" class="btn btn-dark">Rivers</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 10rem;">
+                            <img src="photo-1501363147842-e2f31549aff6.jpg" class="card-img-top" alt="canyon">
+                            <div class="card-img-overlay">
+                                <a id="CnyBtn" href="#images" class="btn btn-dark">Canyons</a>
                             </div>
                         </div>
                         <div class="card" style="width: 10rem;">
                             <img src="mountain.jpg" class="card-img-top" alt="m">
-                            <div class="card-body">
-                                <p class="card-text">mountains</p>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 10rem;">
-                            <img src="mountain.jpg" class="card-img-top" alt="m">
-                            <div class="card-body">
-                                <p class="card-text">mountains</p>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 10rem;">
-                            <img src="mountain.jpg" class="card-img-top" alt="m">
-                            <div class="card-body">
+                            <div class="card-img-overlay">
                                 <p class="card-text">mountains</p>
                             </div>
                         </div>
@@ -172,7 +175,7 @@
                 <div class="col-sm-6">
                     <div id="carouselImages" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
+                            <div id="mountain" class="carousel-item active">
                                 <img src="mountain.jpg" class="d-block w-100"  alt="mountains">
                             </div>
                             <div class="carousel-item">
