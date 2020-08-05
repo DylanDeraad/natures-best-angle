@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Natures Best Angle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
@@ -69,13 +70,13 @@
                     <div id="carouselArtistBio" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="mountain.jpg" class="d-block w-100" alt="mountain">
+                                <img src="mountain.jpg" class="d-block w-100"  alt="mountains">
                             </div>
                             <div class="carousel-item">
                                 <img src="stock-river.jpg" class="d-block w-100" alt="river">
                             </div>
                             <div class="carousel-item">
-                                <img src="mountain.jpg" class="d-block w-100" alt="mountain">
+                                <img src="photo-1501363147842-e2f31549aff6.jpg" class="d-block w-100" alt="canyon">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselArtistBio" role="button" data-slide="prev">
@@ -90,7 +91,7 @@
                 </div>
                 <div class="col-md-6">
                     <div id="becomeArtist">
-                        <h1 id="becomeAtistTittle">Become a Featured Artist!</h1>
+                        <h1 id="becomeArtistTittle">Become a Featured Artist!</h1>
                         <p class="lead">Follow the easy steps listed at the contact form.</p>
                         <a class="btn btn-lg btn-primary" href="#contact" role="button">Get Started</a>
                     </div>
@@ -155,8 +156,6 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 
 </main>
@@ -165,23 +164,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <div id="carouselGeoImages" class="carousel slide" data-ride="carousel">
+                    <div id="carouselImages" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="mountain.jpg" class="d-block w-100" alt="mountain">
+                                <img src="mountain.jpg" class="d-block w-100"  alt="mountains">
                             </div>
                             <div class="carousel-item">
-                                <img src="mountain.jpg" class="d-block w-100" alt="mountain">
+                                <img src="stock-river.jpg" class="d-block w-100" alt="river">
                             </div>
                             <div class="carousel-item">
-                                <img src="mountain.jpg" class="d-block w-100" alt="mountain">
+                                <img src="photo-1501363147842-e2f31549aff6.jpg" class="d-block w-100" alt="canyon">
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselGeoImages" role="button" data-slide="prev">
+                        <a class="carousel-control-prev" href="#carouselImages" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#carouselGeoImages" role="button" data-slide="next">
+                        <a class="carousel-control-next" href="#carouselImages" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
@@ -191,7 +190,64 @@
         </div>
     </div>
     <div id="contact">
+        <form id="contact-form" name="contact-form" method="POST" data-netlify-recaptcha="true" netlify-honeypot="bot-field" action="/#formContainer" novalidate="novalidate">
+            <input type="hidden" name="form-name" value="contact-form">
+            <!-- Name input -->
+            <div class="form-group ">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+            </div>
 
+            <!-- Email input -->
+            <div class="form-group ">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+
+            </div>
+
+            <!-- Subject input -->
+            <div class="form-group ">
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+            </div>
+
+            <!-- Message input -->
+            <div class="form-group ">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" name="message" placeholder="Type message here!" rows="5"></textarea>
+            </div>
+
+            <!-- HoneyPot input -->
+            <p class="hidden">
+                <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+            </p>
+
+            <!-- reCAPTCHA -->
+            <div><script src="https://www.google.com/recaptcha/api.js"></script>
+                <div class="g-recaptcha" data-sitekey="6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9&amp;co=aHR0cHM6Ly9zYXJhaGd1cy55b2dhOjQ0Mw..&amp;hl=en&amp;v=AFBwIe6h0oOL7MOVu88LHld-&amp;size=normal&amp;cb=9nnl09y00qou" width="304" height="78" role="presentation" name="a-6szv1ltn86z6" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+                <noscript>
+                    <div>
+                        <div style="width: 302px; height: 422px; position: relative;">
+                            <div style="width: 302px; height: 422px; position: absolute;">
+                                <iframe src="https://www.google.com/recaptcha/api/fallback?k=6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9" frameborder="0" scrolling="no"
+                                        style="width: 302px; height:422px; border-style: none;">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div style="width: 300px; height: 60px; border-style: none; bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
+    <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+              style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;" >
+    </textarea>
+                        </div>
+                    </div>
+                </noscript>
+            </div>
+
+            <!-- Submit button !-->
+            <div class="text-center">
+                <button class="btn btn-primary yellow text-dark mx-auto" id="submit" name="submit" type="submit"><i class="fa fa-paper-plane"></i>Send</button>
+            </div>
+        </form>
     </div>
 </section>
 
