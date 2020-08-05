@@ -27,6 +27,19 @@
     display: flex;
     align-content: flex-end;
     background-color: transparent;
+    text-align: center;
+}
+#RvrBtn {
+    display: flex;
+    align-content: flex-end;
+    background-color: transparent;
+    text-align: center;
+}
+#CnyBtn {
+    display: flex;
+    align-content: flex-end;
+    background-color: transparent;
+    text-align: center;
 }
 #searchEnvironment {
     display: flex;
