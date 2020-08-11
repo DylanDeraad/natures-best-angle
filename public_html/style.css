@@ -1,7 +1,16 @@
+
+
+#navlad {
+    font-family: Cambria;
+}
+
+
+
 #allButNav {
     margin-top: 3em;
     padding: 1em;
     background-color: #F8F5E3;
+    font-family: Georgia;
 }
 #artist {
     display: flex;
@@ -10,6 +19,10 @@
 }
 #tittle {
    text-align: center;
+}
+#FeaturedArtist {
+    text-align: center;
+
 }
 #becomeArtistTittle {
     text-align: center;
