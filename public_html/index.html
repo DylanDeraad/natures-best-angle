@@ -118,7 +118,17 @@
                                 Choose Environment
                             </button>
                             <div class="dropdown-menu">
-                                ...
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#con" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -158,7 +168,7 @@
                         <div class="card" style="width: 10rem;">
                             <img src="desert.jpg" class="card-img-top" alt="deserts">
                             <div class="card-img-overlay">
-                                <a id="DsrBtn" href="#images" class="btn btn-dark">Deserts</a>
+                                <a id="DsrBtn" href="#desert" class="btn btn-dark">Deserts</a>
                             </div>
                         </div>
                     </div>
@@ -173,32 +183,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-                        </li>
-                    </ul>
+
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <div class="card" style="width: 10rem;">
                                 <img src="forest.jpg" class="card-img-top" alt="forests">
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="tab-pane fade" id="desert" role="tabpanel" aria-labelledby="profile-tab">
                             <div class="card" style="width: 10rem;">
                                 <img src="desert.jpg" class="card-img-top" alt="deserts">
                             </div>
+                        </div>
+                        <div class="tab-pane fade" id="con" role="tabpanel" aria-labelledby="contact-tab">
                             <div class="card" style="width: 10rem;">
-                                <img src="forest.jpg" class="card-img-top" alt="forests">
+                                <img src="photo-1501363147842-e2f31549aff6.jpg" class="card-img-top" alt="canyon">
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="contacter" role="tabpanel" aria-labelledby="contact-tab">...</div>
                     </div>
 
                 </div>
