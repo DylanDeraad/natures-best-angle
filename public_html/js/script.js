@@ -12,6 +12,7 @@ $(document).ready(function () {
    * @author Rochelle Lewis <rlewis37@cnm.edu>
    **/
   $('#contact').validate({
+
     debug: true,
     errorClass: 'alert alert-danger',
     errorLabelContainer: '#output-area',

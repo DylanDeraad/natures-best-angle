@@ -28,6 +28,7 @@ const indexRouteMiddleware = (request, response, nextFunction)  => {
 }
 
 const handleEmailPost = function(request, response, nextFunction) {
+  console.log("handleEmailPost")
   response.append('Content-Type', 'text/html')
 
   if(request.recaptcha.error) {
