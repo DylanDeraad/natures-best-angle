@@ -68,24 +68,9 @@
     background-color: transparent;
     justify-content: center;
 }
-#FrsBtn {
-    display: flex;
-    align-content: flex-end;
-    background-color: transparent;
-    justify-content: center;
-}
-#FrsBtn {
-    display: flex;
-    align-content: flex-end;
-    background-color: transparent;
-    justify-content: center;
-}
-#DsrBtn {
-    display: flex;
-    align-content: flex-end;
-    background-color: transparent;
-    justify-content: center;
-}
+
+
+
 #searchEnvironment {
     display: flex;
     align-items: flex-start;
