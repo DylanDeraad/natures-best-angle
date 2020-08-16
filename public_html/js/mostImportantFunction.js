@@ -1,4 +1,4 @@
 function mostImportantFunction() {
-  let elmnt = document.getElementById("tab-content");
+  let elmnt = document.getElementById("cover-img-fixer");
   elmnt.scrollIntoView();
 }

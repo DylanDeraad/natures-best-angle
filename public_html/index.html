@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
-<body data-spy="scroll" data-target="#images">
+<body data-spy="scroll" data-target="#cover-img-fixer">
 <nav id="navlad" class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
     <!-- Navbar -->
     <div class="container">
@@ -45,6 +45,8 @@
                             <a class="nav-item" id="ocean-tab-top" data-toggle="pill" href="#ocean" role="tab" aria-controls="v-pills-ocean" aria-selected="false" onclick="mostImportantFunction()">Ocean</a>
 
                             <a class="nav-item" id="forest-tab-top" data-toggle="pill" href="#forests" role="tab" aria-controls="v-pills-forests" aria-selected="false" onclick="mostImportantFunction()">Forests</a>
+
+                            <a class="nav-item" id="desert-tab-top" data-toggle="pill" href="#deserts" role="tab" aria-controls="v-pills-deserts" aria-selected="false" onclick="mostImportantFunction()">Deserts</a>
                         </div>
                     </div>
 
@@ -63,10 +65,10 @@
                     <a class="nav-link" href="#tittle">Artists</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#geoPics">Geo Pics</a>
+                    <a class="nav-link" href="#cover-geo-fixer">Geo Pics</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#images">Images</a>
+                    <a class="nav-link" href="#cover-img-fixer">Images</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact-container">Contact</a>
@@ -121,6 +123,7 @@
                     </div>
                 </div>
             </div>
+            <div id="cover-geo-fixer"></div>
         </div>
     </div>
     <div id="geoPics">
@@ -145,6 +148,8 @@
                                     <a class="nav-link" id="ocean-tab-mid" data-toggle="pill" href="#ocean" role="tab" aria-controls="v-pills-ocean" aria-selected="false" onclick="mostImportantFunction()">Ocean</a>
 
                                     <a class="nav-link" id="forest-tab-mid" data-toggle="pill" href="#forests" role="tab" aria-controls="v-pills-forests" aria-selected="false" onclick="mostImportantFunction()">Forests</a>
+
+                                    <a class="nav-link" id="desert-tab-mid" data-toggle="pill" href="#deserts" role="tab" aria-controls="v-pills-deserts" aria-selected="false" onclick="mostImportantFunction()">Deserts</a>
                                 </div>
                             </div>
                         </div>
@@ -155,46 +160,35 @@
                         <div class="card" style="width: 10rem;">
                             <img src="mountain.jpg" class="card-img-top" alt="montainbtn">
                             <div class="card-img-overlay">
-                                <a id="MntBtn" href="#images" class="btn btn-dark">Mountains</a>
+                                <a id="MntBtn" href="#mountains" class="nav-link" role="tab" aria-controls="v-pills-mountains" aria-selected="true" onclick="mostImportantFunction()">Mountains</a>
                             </div>
                         </div>
                         <div class="card" style="width: 10rem;">
                             <img src="stock-river.jpg" class="card-img-top" alt="riverbtn">
                             <div class="card-img-overlay">
-                                <a id="RvrBtn" href="#images" class="btn btn-dark">Rivers</a>
+                                <a id="RvrBtn" href="#rivers" class="nav-link" role="tab" aria-controls="v-pills-canyons" aria-selected="false" onclick="mostImportantFunction()">Rivers</a>
                             </div>
                         </div>
                         <div class="card" style="width: 10rem;">
                             <img src="photo-1501363147842-e2f31549aff6.jpg" class="card-img-top" alt="canyonbtn">
                             <div class="card-img-overlay">
-                                <a id="CnyBtn" href="#images" class="btn btn-dark">Canyons</a>
+                                <a id="CnyBtn" class="nav-link" href="#canyons" role="tab" aria-controls="v-pills-canyons" aria-selected="false" onclick="mostImportantFunction()">Canyons</a>
                             </div>
                         </div>
                         <div class="card" style="width: 10rem;">
                             <img src="ocean.jpg" class="card-img-top" alt="oceanbtn">
                             <div class="card-img-overlay">
-                                <a id="OcnBtn" href="#images" class="btn btn-dark">Ocean</a>
+                                <a id="OcnBtn" class="nav-link" href="#ocean" role="tab" aria-controls="v-pills-ocean" aria-selected="false" onclick="mostImportantFunction()">Ocean</a>
                             </div>
                         </div>
-                        <div class="card" style="width: 10rem;">
-                            <img src="forest.jpg" class="card-img-top" alt="forests">
-                            <div class="card-img-overlay">
-                                <a id="FrsBtn" href="#images" class="btn btn-dark">Forests</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 10rem;">
-                            <img src="desert.jpg" class="card-img-top" alt="deserts">
-                            <div class="card-img-overlay">
-                                <a id="DsrBtn" href="#images" class="btn btn-dark">Deserts</a>
-                            </div>
-                        </div>
+                        <div id="cover-img-fixer"> </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </main>
+
 <section id="bottom">
     <div id="images">
         <div class="container">
@@ -213,6 +207,9 @@
 
                         <div class="tab-pane fade" id="forests" role="tabpanel" aria-labelledby="forests-tab-mid forests-tab-top">Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.</div>
                     </div>
+
+                    <div class="tab-pane fade" id="deserts" role="tabpanel" aria-labelledby="desert-tab-mid desert-tab-top">Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.</div>
+                </div>
 
                 </div>
             </div>

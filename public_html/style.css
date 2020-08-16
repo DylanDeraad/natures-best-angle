@@ -38,7 +38,7 @@
 
 #geoPics {
     border: 4px solid black;
-    margin: 30px;
+    margin: 40px;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -100,7 +100,7 @@
 }
 #bottom {
     border-top: 3px solid black;
-    padding: 1em;
+    padding: 1em 1em 0 1em;
     background-color: #E8DBBF;
 }
 #images {
