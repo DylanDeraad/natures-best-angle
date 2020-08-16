@@ -30,13 +30,24 @@
             <ul class="navbar-nav mr-auto">
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="nav-item__menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="nav-item__menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Environments
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="nav-item__menu">
-                        <a class="dropdown-item" href="#mountain">Mountains</a>
-                        <a class="dropdown-item" href="#bottom">Rivers</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab-top" role="tablist" aria-orientation="vertical">
+
+                            <a class="nav-item active" id="mountain-tab-top" data-toggle="pill" href="#mountains" role="tab" aria-controls="v-pills-mountains" aria-selected="true" onclick="mostImportantFunction()">Mountains</a>
+
+                            <a class="nav-item" id="river-tab-top" data-toggle="pill" href="#rivers" role="tab" aria-controls="v-pills-rivers" aria-selected="false" onclick="mostImportantFunction()">Rivers</a>
+
+                            <a class="nav-item" id="canyon-tab-top" data-toggle="pill" href="#canyons" role="tab" aria-controls="v-pills-canyons" aria-selected="false" onclick="mostImportantFunction()">Canyons</a>
+
+                            <a class="nav-item" id="ocean-tab-top" data-toggle="pill" href="#ocean" role="tab" aria-controls="v-pills-ocean" aria-selected="false" onclick="mostImportantFunction()">Ocean</a>
+
+                            <a class="nav-item" id="forest-tab-top" data-toggle="pill" href="#forests" role="tab" aria-controls="v-pills-forests" aria-selected="false" onclick="mostImportantFunction()">Forests</a>
+                        </div>
                     </div>
+
                 </li>
 
             </ul>
@@ -118,7 +129,7 @@
                 <div class="col-sm-3 col-md-6">
                     <div id="searchEnvironment">
                         <div class="dropdown">
-                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="btn btn-lg btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Environments
                             </a>
 
@@ -127,12 +138,13 @@
 
                                     <a class="nav-link active" id="mountain-tab-mid" data-toggle="pill" href="#mountains" role="tab" aria-controls="v-pills-mountains" aria-selected="true" onclick="mostImportantFunction()">Mountains</a>
 
-
                                     <a class="nav-link" id="river-tab-mid" data-toggle="pill" href="#rivers" role="tab" aria-controls="v-pills-rivers" aria-selected="false" onclick="mostImportantFunction()">Rivers</a>
 
                                     <a class="nav-link" id="canyon-tab-mid" data-toggle="pill" href="#canyons" role="tab" aria-controls="v-pills-canyons" aria-selected="false" onclick="mostImportantFunction()">Canyons</a>
 
                                     <a class="nav-link" id="ocean-tab-mid" data-toggle="pill" href="#ocean" role="tab" aria-controls="v-pills-ocean" aria-selected="false" onclick="mostImportantFunction()">Ocean</a>
+
+                                    <a class="nav-link" id="forest-tab-mid" data-toggle="pill" href="#forests" role="tab" aria-controls="v-pills-forests" aria-selected="false" onclick="mostImportantFunction()">Forests</a>
                                 </div>
                             </div>
                         </div>
@@ -191,13 +203,15 @@
 
                     <div class="tab-content" id="tab-content">
 
-                        <div class="tab-pane fade show active" id="mountains" role="tabpanel" aria-labelledby="mountain-tab-mid">Fugiat id quis dolor culpa eiusmod anim velit excepteur proident dolor aute qui</div>
+                        <div class="tab-pane fade show active" id="mountains" role="tabpanel" aria-labelledby="mountain-tab-mid mountain-tab-top">Fugiat id quis dolor culpa eiusmod anim velit excepteur proident dolor aute qui</div>
 
-                        <div class="tab-pane fade" id="rivers" role="tabpanel" aria-labelledby="river-tab-mid">magna. Ad proident laboris ullamco esse anim Lorem Lorem veniam quis Lorem irure</div>
+                        <div class="tab-pane fade" id="rivers" role="tabpanel" aria-labelledby="river-tab-mid river-tab-top">magna. Ad proident laboris ullamco esse anim Lorem Lorem veniam quis Lorem irure</div>
 
-                        <div class="tab-pane fade" id="canyons" role="tabpanel" aria-labelledby="canyon-tab-mid">occaecat velit nostrud magna nulla. Velit et et proident Lorem do ea tempor officia do</div>
+                        <div class="tab-pane fade" id="canyons" role="tabpanel" aria-labelledby="canyon-tab-mid canyon-tab-top">occaecat velit nostrud magna nulla. Velit et et proident Lorem do ea tempor officia do</div>
 
-                        <div class="tab-pane fade" id="ocean" role="tabpanel" aria-labelledby="ocean-tab-mid">or. Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.</div>
+                        <div class="tab-pane fade" id="ocean" role="tabpanel" aria-labelledby="ocean-tab-mid ocean-tab-top">or. Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.</div>
+
+                        <div class="tab-pane fade" id="forests" role="tabpanel" aria-labelledby="forests-tab-mid forests-tab-top">Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.</div>
                     </div>
 
                 </div>
