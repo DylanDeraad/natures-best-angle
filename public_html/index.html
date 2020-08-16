@@ -58,7 +58,7 @@
                     <a class="nav-link" href="#images">Images</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="#contact-container">Contact</a>
                 </li>
             </ul>
 
@@ -67,7 +67,7 @@
     </div> <!-- / .container -->
 </nav>
 
-<main id="allButNav" role="main">
+<main id="allButNav">
     <h1 id="tittle">Natures Best Angle</h1>
     <div id="artist">
         <div class="container">
@@ -119,20 +119,20 @@
                     <div id="searchEnvironment">
                         <div class="dropdown">
                             <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown link
+                                Environments
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
-                                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true" onclick="mostImportantFunction()">Home</a>
+                                    <a class="nav-link active" id="mountain-tab-mid" data-toggle="pill" href="#mountains" role="tab" aria-controls="v-pills-mountains" aria-selected="true" onclick="mostImportantFunction()">Mountains</a>
 
 
-                                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false" onclick="mostImportantFunction()">Profile</a>
+                                    <a class="nav-link" id="river-tab-mid" data-toggle="pill" href="#rivers" role="tab" aria-controls="v-pills-rivers" aria-selected="false" onclick="mostImportantFunction()">Rivers</a>
 
-                                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false" onclick="mostImportantFunction()">Messages</a>
+                                    <a class="nav-link" id="canyon-tab-mid" data-toggle="pill" href="#canyons" role="tab" aria-controls="v-pills-canyons" aria-selected="false" onclick="mostImportantFunction()">Canyons</a>
 
-                                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false" onclick="mostImportantFunction()">Settings</a>
+                                    <a class="nav-link" id="ocean-tab-mid" data-toggle="pill" href="#ocean" role="tab" aria-controls="v-pills-ocean" aria-selected="false" onclick="mostImportantFunction()">Ocean</a>
                                 </div>
                             </div>
                         </div>
@@ -141,25 +141,25 @@
                 <div class="col-sm-8 col-md-6">
                     <div id="popularEnvironments">
                         <div class="card" style="width: 10rem;">
-                            <img src="mountain.jpg" class="card-img-top" alt="montains">
+                            <img src="mountain.jpg" class="card-img-top" alt="montainbtn">
                             <div class="card-img-overlay">
                                 <a id="MntBtn" href="#images" class="btn btn-dark">Mountains</a>
                             </div>
                         </div>
                         <div class="card" style="width: 10rem;">
-                            <img src="stock-river.jpg" class="card-img-top" alt="river">
+                            <img src="stock-river.jpg" class="card-img-top" alt="riverbtn">
                             <div class="card-img-overlay">
                                 <a id="RvrBtn" href="#images" class="btn btn-dark">Rivers</a>
                             </div>
                         </div>
                         <div class="card" style="width: 10rem;">
-                            <img src="photo-1501363147842-e2f31549aff6.jpg" class="card-img-top" alt="canyon">
+                            <img src="photo-1501363147842-e2f31549aff6.jpg" class="card-img-top" alt="canyonbtn">
                             <div class="card-img-overlay">
                                 <a id="CnyBtn" href="#images" class="btn btn-dark">Canyons</a>
                             </div>
                         </div>
                         <div class="card" style="width: 10rem;">
-                            <img src="ocean.jpg" class="card-img-top" alt="ocean">
+                            <img src="ocean.jpg" class="card-img-top" alt="oceanbtn">
                             <div class="card-img-overlay">
                                 <a id="OcnBtn" href="#images" class="btn btn-dark">Ocean</a>
                             </div>
@@ -191,13 +191,13 @@
 
                     <div class="tab-content" id="tab-content">
 
-                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">Fugiat id quis dolor culpa eiusmod anim velit excepteur proident dolor aute qui</div>
+                        <div class="tab-pane fade show active" id="mountains" role="tabpanel" aria-labelledby="mountain-tab-mid">Fugiat id quis dolor culpa eiusmod anim velit excepteur proident dolor aute qui</div>
 
-                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">magna. Ad proident laboris ullamco esse anim Lorem Lorem veniam quis Lorem irure</div>
+                        <div class="tab-pane fade" id="rivers" role="tabpanel" aria-labelledby="river-tab-mid">magna. Ad proident laboris ullamco esse anim Lorem Lorem veniam quis Lorem irure</div>
 
-                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">occaecat velit nostrud magna nulla. Velit et et proident Lorem do ea tempor officia do</div>
+                        <div class="tab-pane fade" id="canyons" role="tabpanel" aria-labelledby="canyon-tab-mid">occaecat velit nostrud magna nulla. Velit et et proident Lorem do ea tempor officia do</div>
 
-                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">or. Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.</div>
+                        <div class="tab-pane fade" id="ocean" role="tabpanel" aria-labelledby="ocean-tab-mid">or. Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.</div>
                     </div>
 
                 </div>
@@ -209,7 +209,7 @@
 
             <header class="py-3">
                 <div class="container">
-                    <h1>PWP Form Demo</h1>
+                    <h1>Become a Featured Artist</h1>
                 </div>
             </header>
 
@@ -218,7 +218,7 @@
                     <div class="contact col-md-6">
 
                         <!-- BEGIN CONTACT FORM -->
-                        <h2>testing 123</h2>
+                        <h2>Contact Me</h2>
                         <form action="./apis/" id="contact" method="post" novalidate>
                             <div class="form-group">
                                 <label for="name">Name</label>
