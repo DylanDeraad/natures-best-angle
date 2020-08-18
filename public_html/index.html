@@ -90,17 +90,17 @@
                     <div id="carouselArtistBio" class="carousel" data-interval="false">
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-interval="200000">
-                                <img src="selfPort.jpeg" class="d-block w-100 h-100"  alt="firstArtist">
+                                <img src="img/selfPort.jpeg" class="d-block w-100 h-100" alt="firstArtist">
                                 <p id="firstArtistName">Artist Dylan DeRaad</p>
                                 <p id="firstArtistInfo">contact info</p>
                             </div>
                             <div class="carousel-item" data-interval="200000">
-                                <img src="jasmin-chew.jpg" class="d-block w-100" alt="artistJasmin">
+                                <img src="img/jasmin-chew.jpg" class="d-block w-100" alt="artistJasmin">
                                 <p id="artistJasName">Jasmin Chew</p>
                                 <p id="artistJInfo">IG: @majestical_jasmin</p>
                             </div>
                             <div class="carousel-item" data-interval="200000">
-                                <img src="mikeBaker.jpg" class="d-block w-100" alt="artistMike">
+                                <img src="img/mikeBaker.jpg" class="d-block w-100" alt="artistMike">
                                 <p id="artistMikeName">Mike Baker</p>
                                 <p id="artistMikeInfo">unsplash.com/@bikemaker</p>
                             </div>
@@ -159,25 +159,25 @@
                     <div id="popularEnvironments">
                         <div class="nav" role="tablist">
                             <div class="card" style="width: 10rem;">
-                                <img src="mountain.jpg" class="card-img-top" alt="montainbtn">
+                                <img src="img/mountain.jpg" class="card-img-top" alt="montainbtn">
                                 <div class="card-img-overlay">
                                     <a class="nav-link active" id="MtnBtn" data-toggle="pill" href="#mountains" role="tab" aria-controls="v-pills-mountains" aria-selected="true" onclick="mostImportantFunction()">Mountains</a>
                                 </div>
                             </div>
                             <div class="card" style="width: 10rem;">
-                                <img src="stock-river.jpg" class="card-img-top" alt="riverbtn">
+                                <img src="img/stock-river.jpg" class="card-img-top" alt="riverbtn">
                                 <div class="card-img-overlay">
                                     <a class="nav-link" id="RvrBtn" data-toggle="pill" href="#rivers" role="tab" aria-controls="v-pills-rivers" aria-selected="false" onclick="mostImportantFunction()">Rivers</a>
                                 </div>
                             </div>
                             <div class="card" style="width: 10rem;">
-                                <img src="photo-1501363147842-e2f31549aff6.jpg" class="card-img-top" alt="canyonbtn">
+                                <img src="img/photo-1501363147842-e2f31549aff6.jpg" class="card-img-top" alt="canyonbtn">
                                 <div class="card-img-overlay">
                                     <a class="nav-link" id="CnyBtn" data-toggle="pill" href="#canyons" role="tab" aria-controls="v-pills-canyons" aria-selected="false" onclick="mostImportantFunction()">Canyons</a>
                                 </div>
                             </div>
                             <div class="card" style="width: 10rem;">
-                                <img src="ocean.jpg" class="card-img-top" alt="oceanbtn">
+                                <img src="img/ocean.jpg" class="card-img-top" alt="oceanbtn">
                                 <div class="card-img-overlay">
                                     <a class="nav-link" id="OcnBtn" data-toggle="pill" href="#ocean" role="tab" aria-controls="v-pills-ocean" aria-selected="false" onclick="mostImportantFunction()">Ocean</a>
                                 </div>
@@ -200,22 +200,33 @@
 
                     <div class="tab-content" id="tab-content">
 
-                        <div class="tab-pane fade show active" id="mountains" role="tabpanel" aria-labelledby="mountain-tab-mid mountain-tab-top MntBtn">Fugiat id quis dolor culpa eiusmod anim velit excepteur proident dolor aute qui</div>
+                        <div class="card-columns">
 
-                        <div class="tab-pane fade" id="rivers" role="tabpanel" aria-labelledby="river-tab-mid river-tab-top RvrBtn">magna. Ad proident laboris ullamco esse anim Lorem Lorem veniam quis Lorem irure</div>
+                            <div class="tab-pane fade show active" id="mountains" role="tabpanel" aria-labelledby="mountain-tab-mid mountain-tab-top MntBtn">
+                                <div class="card">
+                                    <img src="./img/desert2.jpg" class="card-img-top" alt="desert2">
+                                </div>
+                            </div>
 
-                        <div class="tab-pane fade" id="canyons" role="tabpanel" aria-labelledby="canyon-tab-mid canyon-tab-top CnyBtn">occaecat velit nostrud magna nulla. Velit et et proident Lorem do ea tempor officia do</div>
+                            <div class="tab-pane fade" id="rivers" role="tabpanel" aria-labelledby="river-tab-mid river-tab-top RvrBtn">magna. Ad proident laboris ullamco esse anim Lorem Lorem veniam quis Lorem irure</div>
 
-                        <div class="tab-pane fade" id="ocean" role="tabpanel" aria-labelledby="ocean-tab-mid ocean-tab-top OcnBtn">or. Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.</div>
+                            <div class="tab-pane fade" id="canyons" role="tabpanel" aria-labelledby="canyon-tab-mid canyon-tab-top CnyBtn">occaecat velit nostrud magna nulla. Velit et et proident Lorem do ea tempor officia do</div>
 
-                        <div class="tab-pane fade" id="forests" role="tabpanel" aria-labelledby="forests-tab-mid forests-tab-top">Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.</div>
+                            <div class="tab-pane fade" id="ocean" role="tabpanel" aria-labelledby="ocean-tab-mid ocean-tab-top OcnBtn">or. Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.</div>
 
-                        <div class="tab-pane fade" id="deserts" role="tabpanel" aria-labelledby="desert-tab-mid desert-tab-top">
-                            <div class="card" style="width: 10rem;">
-                                <img src="ocean.jpg" class="card-img-top" alt="oceanbtn">
+                            <div class="tab-pane fade" id="forests" role="tabpanel" aria-labelledby="forests-tab-mid forests-tab-top">Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.</div>
 
+                            <div class="tab-pane fade" id="deserts" role="tabpanel" aria-labelledby="desert-tab-mid desert-tab-top">
+                                <div class="card">
+                                    <img src="./img/desert1.png" class="card-img-top" alt="desert1">
+                                </div>
+
+                                <div class="card">
+                                    <img src="./img/desert2.jpg" class="card-img-top" alt="desert2">
+                                </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
