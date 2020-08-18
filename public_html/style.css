@@ -9,7 +9,9 @@
 #allButNav {
     margin-top: 3em;
     padding: 1em;
-    background-color: #F8F5E3;
+    background: url(backtry4.jpg) no-repeat center center fixed;
+    background-size: cover;
+    /*background-image: mountain.jpg;*/
     font-family: Georgia;
 }
 #artist {
@@ -86,8 +88,11 @@
 #bottom {
     border-top: 3px solid black;
     padding: 1em 1em 0 1em;
-    background-color: #E8DBBF;
+    background-color: #8EA490;
 }
 #images {
     margin-left: 10px;
+}
+#foot {
+    background-color: #182938;
 }

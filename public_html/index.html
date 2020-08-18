@@ -119,7 +119,7 @@
                     <div id="becomeArtist">
                         <h1 id="becomeArtistTittle">Become a Featured Artist!</h1>
                         <p id="becomeArtistText" class="lead">Follow the easy steps listed at the contact form.</p>
-                        <a id="becomeArtistBtn" class="btn btn-lg btn-primary" href="#contact" role="button">Get Started</a>
+                        <a id="becomeArtistBtn" class="btn btn-lg btn-primary" href="#contact-container" role="button">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -139,17 +139,17 @@
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
-                                    <a class="nav-link active" id="mountain-tab-mid" data-toggle="pill" href="#mountains" role="tab" aria-controls="v-pills-mountains" aria-selected="true" onclick="mostImportantFunction()">Mountains</a>
+                                    <a class="nav-link active" id="mountain-tab-mid" data-toggle="pill" href="#mountains" role="tab" aria-controls="v-pills-mountains" aria-selected="false"  onclick="mostImportantFunction()">Mountains</a>
 
-                                    <a class="nav-link" id="river-tab-mid" data-toggle="pill" href="#rivers" role="tab" aria-controls="v-pills-rivers" aria-selected="false" onclick="mostImportantFunction()">Rivers</a>
+                                    <a class="nav-link" id="river-tab-mid" data-toggle="pill" href="#rivers" role="tab" aria-controls="v-pills-rivers" aria-selected="false"  onclick="mostImportantFunction()">Rivers</a>
 
-                                    <a class="nav-link" id="canyon-tab-mid" data-toggle="pill" href="#canyons" role="tab" aria-controls="v-pills-canyons" aria-selected="false" onclick="mostImportantFunction()">Canyons</a>
+                                    <a class="nav-link" id="canyon-tab-mid" data-toggle="pill" href="#canyons" role="tab" aria-controls="v-pills-canyons" aria-selected="false"  onclick="mostImportantFunction()">Canyons</a>
 
-                                    <a class="nav-link" id="ocean-tab-mid" data-toggle="pill" href="#ocean" role="tab" aria-controls="v-pills-ocean" aria-selected="false" onclick="mostImportantFunction()">Ocean</a>
+                                    <a class="nav-link" id="ocean-tab-mid" data-toggle="pill" href="#ocean" role="tab" aria-controls="v-pills-ocean" aria-selected="false"  onclick="mostImportantFunction()">Ocean</a>
 
                                     <a class="nav-link" id="forest-tab-mid" data-toggle="pill" href="#forests" role="tab" aria-controls="v-pills-forests" aria-selected="false" onclick="mostImportantFunction()">Forests</a>
 
-                                    <a class="nav-link" id="desert-tab-mid" data-toggle="pill" href="#deserts" role="tab" aria-controls="v-pills-deserts" aria-selected="false" onclick="mostImportantFunction()">Deserts</a>
+                                    <a class="nav-link" id="desert-tab-mid" data-toggle="pill" href="#deserts" role="tab" aria-controls="v-pills-deserts" aria-selected="false"  onclick="mostImportantFunction()">Deserts</a>
                                 </div>
                             </div>
                         </div>
@@ -209,11 +209,14 @@
                         <div class="tab-pane fade" id="ocean" role="tabpanel" aria-labelledby="ocean-tab-mid ocean-tab-top OcnBtn">or. Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.</div>
 
                         <div class="tab-pane fade" id="forests" role="tabpanel" aria-labelledby="forests-tab-mid forests-tab-top">Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.</div>
+
+                        <div class="tab-pane fade" id="deserts" role="tabpanel" aria-labelledby="desert-tab-mid desert-tab-top">
+                            <div class="card" style="width: 10rem;">
+                                <img src="ocean.jpg" class="card-img-top" alt="oceanbtn">
+
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="tab-pane fade" id="deserts" role="tabpanel" aria-labelledby="desert-tab-mid desert-tab-top"> mmmmmReprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.</div>
-                </div>
-
                 </div>
             </div>
         </div>
@@ -289,9 +292,9 @@
 </section>
 
 
-<footer class="py-4 text-white">
+<footer id="foot" class="py-4 text-black">
     <div class="container">
-        <a class="text-white" href="https://bootcamp-coders.cnm.edu/class-materials/jquery-validated-captcha-form/"
+        <a class="text-black" href="https://bootcamp-coders.cnm.edu/class-materials/jquery-validated-captcha-form/"
            target="_blank">Documentation</a> | <a class="text-white" href="https://github.com/rlewis2892/pwp-form-demo"
                                                   target="_blank">GitHub</a>
     </div>
