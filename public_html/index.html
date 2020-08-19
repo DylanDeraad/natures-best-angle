@@ -33,6 +33,9 @@
                     <a class="nav-link dropdown-toggle" href="#" id="nav-item__menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Environments
                     </a>
+
+                    <!-- USING TABS AND SCROLL FUNCTION FOR NAV -->
+
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <div class="nav flex-column nav-pills" id="v-pills-tab-top" role="tablist" aria-orientation="vertical">
 
@@ -40,13 +43,15 @@
 
                             <a class="nav-item" id="river-tab-top" data-toggle="pill" href="#rivers" role="tab" aria-controls="v-pills-rivers" aria-selected="false" onclick="mostImportantFunction()">Rivers</a>
 
-                            <a class="nav-item" id="canyon-tab-top" data-toggle="pill" href="#canyons" role="tab" aria-controls="v-pills-canyons" aria-selected="false" onclick="mostImportantFunction()">Canyons</a>
+                            <a class="nav-item" id="canyon-tab-top" data-toggle="pill" href="#canyons" role="tab" aria-controls="v-pills-canyons" aria-selected="false" onclick="mostImportantFunction()">Valleys</a>
 
                             <a class="nav-item" id="ocean-tab-top" data-toggle="pill" href="#ocean" role="tab" aria-controls="v-pills-ocean" aria-selected="false" onclick="mostImportantFunction()">Ocean</a>
 
                             <a class="nav-item" id="forest-tab-top" data-toggle="pill" href="#forests" role="tab" aria-controls="v-pills-forests" aria-selected="false" onclick="mostImportantFunction()">Forests</a>
 
                             <a class="nav-item" id="desert-tab-top" data-toggle="pill" href="#deserts" role="tab" aria-controls="v-pills-deserts" aria-selected="false" onclick="mostImportantFunction()">Deserts</a>
+
+                            <a class="nav-item" id="lake-tab-top" data-toggle="pill" href="#lakes" role="tab" aria-controls="v-pills-lakes" aria-selected="false" onclick="mostImportantFunction()">Lakes</a>
                         </div>
                     </div>
 
@@ -75,9 +80,9 @@
                 </li>
             </ul>
 
-        </div> <!-- / .navbar-collapse -->
+        </div> <!-- navbar-collapse -->
 
-    </div> <!-- / .container -->
+    </div>
 </nav>
 
 <main id="allButNav">
@@ -86,23 +91,32 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
+
+                    <!-- CAROUSEL TO SHOW FEATURED ARTISTS -->
+
                     <h2  id="FeaturedArtist">Featured Artists</h2>
                     <div id="carouselArtistBio" class="carousel" data-interval="false">
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-interval="200000">
                                 <img src="img/selfPort.jpeg" class="d-block w-100 h-100" alt="firstArtist">
-                                <p id="firstArtistName">Artist Dylan DeRaad</p>
-                                <p id="firstArtistInfo">contact info</p>
+                                <div id="myartisttab">
+                                    <p id="firstArtistName">Artist Dylan DeRaad</p>
+                                    <p id="firstArtistInfo">contact info</p>
+                                </div>
                             </div>
                             <div class="carousel-item" data-interval="200000">
                                 <img src="img/jasmin-chew.jpg" class="d-block w-100" alt="artistJasmin">
-                                <p id="artistJasName">Jasmin Chew</p>
-                                <p id="artistJInfo">IG: @majestical_jasmin</p>
+                                <div id="stockgirlartist">
+                                    <p id="artistJasName">Jasmin Chew</p>
+                                    <p id="artistJInfo">IG: @majestical_jasmin</p>
+                                </div>
                             </div>
                             <div class="carousel-item" data-interval="200000">
                                 <img src="img/mikeBaker.jpg" class="d-block w-100" alt="artistMike">
-                                <p id="artistMikeName">Mike Baker</p>
-                                <p id="artistMikeInfo">unsplash.com/@bikemaker</p>
+                                <div id="stockguyartist">
+                                    <p id="artistMikeName">Mike Baker</p>
+                                    <p id="artistMikeInfo">unsplash.com/@bikemaker</p>
+                                </div>
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselArtistBio" role="button" data-slide="prev">
@@ -126,6 +140,9 @@
             <div id="cover-geo-fixer"></div>
         </div>
     </div>
+
+    <!-- USING TABS AND SCROLL FUNCTION FOR NAV -->
+
     <div id="geoPics">
         <div class="containter">
             <div class="row">
@@ -143,18 +160,23 @@
 
                                     <a class="nav-link" id="river-tab-mid" data-toggle="pill" href="#rivers" role="tab" aria-controls="v-pills-rivers" aria-selected="false"  onclick="mostImportantFunction()">Rivers</a>
 
-                                    <a class="nav-link" id="canyon-tab-mid" data-toggle="pill" href="#canyons" role="tab" aria-controls="v-pills-canyons" aria-selected="false"  onclick="mostImportantFunction()">Canyons</a>
+                                    <a class="nav-link" id="canyon-tab-mid" data-toggle="pill" href="#canyons" role="tab" aria-controls="v-pills-canyons" aria-selected="false"  onclick="mostImportantFunction()">Valleys</a>
 
                                     <a class="nav-link" id="ocean-tab-mid" data-toggle="pill" href="#ocean" role="tab" aria-controls="v-pills-ocean" aria-selected="false"  onclick="mostImportantFunction()">Ocean</a>
 
                                     <a class="nav-link" id="forest-tab-mid" data-toggle="pill" href="#forests" role="tab" aria-controls="v-pills-forests" aria-selected="false" onclick="mostImportantFunction()">Forests</a>
 
                                     <a class="nav-link" id="desert-tab-mid" data-toggle="pill" href="#deserts" role="tab" aria-controls="v-pills-deserts" aria-selected="false"  onclick="mostImportantFunction()">Deserts</a>
+
+                                    <a class="nav-item" id="lake-tab-mid" data-toggle="pill" href="#lakes" role="tab" aria-controls="v-pills-lakes" aria-selected="false" onclick="mostImportantFunction()">Lakes</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- TURNED CARDS INTO BUTTONS TO NAVIGATE TO MAIN CONTENT -->
+
                 <div class="col-sm-8 col-md-6">
                     <div id="popularEnvironments">
                         <div class="nav" role="tablist">
@@ -173,7 +195,7 @@
                             <div class="card" style="width: 10rem;">
                                 <img src="img/photo-1501363147842-e2f31549aff6.jpg" class="card-img-top" alt="canyonbtn">
                                 <div class="card-img-overlay">
-                                    <a class="nav-link" id="CnyBtn" data-toggle="pill" href="#canyons" role="tab" aria-controls="v-pills-canyons" aria-selected="false" onclick="mostImportantFunction()">Canyons</a>
+                                    <a class="nav-link" id="CnyBtn" data-toggle="pill" href="#canyons" role="tab" aria-controls="v-pills-canyons" aria-selected="false" onclick="mostImportantFunction()">Valleys</a>
                                 </div>
                             </div>
                             <div class="card" style="width: 10rem;">
@@ -184,6 +206,8 @@
                             </div>
                         </div>
 
+                        <!-- USED DIV TO FIX SCROLL -->
+
                         <div id="cover-img-fixer"> </div>
                     </div>
                 </div>
@@ -193,6 +217,7 @@
 </main>
 
 <section id="bottom">
+    <!-- MAIN CONTENT OF SITE USES TABS TO HOLD GALLERY -->
     <div id="images">
         <div class="container">
             <div class="row">
@@ -200,9 +225,8 @@
 
                     <div class="tab-content" id="tab-content">
 
-                        <div class="card-columns">
-
-                            <div class="tab-pane fade show active" id="mountains" role="tabpanel" aria-labelledby="mountain-tab-mid mountain-tab-top MntBtn">
+                        <div class="tab-pane fade show active" id="mountains" role="tabpanel" aria-labelledby="mountain-tab-mid mountain-tab-top MntBtn">
+                            <div class="card-columns">
                                 <div class="card">
                                     <img src="./img/mountain1.jpeg" class="card-img-top" alt="mountain1">
                                 </div>
@@ -230,10 +254,12 @@
                                 <div class="card">
                                     <img src="./img/mountain8.JPG" class="card-img-top" alt="mountain8">
                                 </div>
-
                             </div>
 
-                            <div class="tab-pane fade" id="rivers" role="tabpanel" aria-labelledby="river-tab-mid river-tab-top RvrBtn">
+                        </div>
+
+                        <div class="tab-pane fade" id="rivers" role="tabpanel" aria-labelledby="river-tab-mid river-tab-top RvrBtn">
+                            <div class="card-columns">
                                 <div class="card">
                                     <img src="./img/river1.jpg" class="card-img-top" alt="river1">
                                 </div>
@@ -255,18 +281,82 @@
                                 </div>
                             </div>
 
-                            <div class="tab-pane fade" id="canyons" role="tabpanel" aria-labelledby="canyon-tab-mid canyon-tab-top CnyBtn">
+                        </div>
+
+                        <div class="tab-pane fade" id="canyons" role="tabpanel" aria-labelledby="canyon-tab-mid canyon-tab-top CnyBtn">
+                            <div class="card-columns">
                                 <div class="card">
-                                    <img src="./img/valley1.jpg" class="card-img-top" alt="valley">
+                                    <img src="./img/valley1.jpg" class="card-img-top" alt="valley1">
+                                </div>
+
+                                <div class="card">
+                                    <img src="./img/valley2.jpg" class="card-img-top" alt="valley2">
+                                </div>
+
+                                <div class="card">
+                                    <img src="./img/valley3.JPG" class="card-img-top" alt="valley3">
+                                </div>
+
+                                <div class="card">
+                                    <img src="./img/valley4.jpeg" class="card-img-top" alt="valley4">
                                 </div>
 
                             </div>
+                        </div>
+                        <div class="tab-pane fade" id="ocean" role="tabpanel" aria-labelledby="ocean-tab-mid ocean-tab-top OcnBtn">
+                            <div class="card-columns">
+                                <div class="card">
+                                    <img src="./img/ocean1.JPG" class="card-img-top" alt="ocean1">
+                                </div>
 
-                            <div class="tab-pane fade" id="ocean" role="tabpanel" aria-labelledby="ocean-tab-mid ocean-tab-top OcnBtn">or. Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.</div>
+                                <div class="card">
+                                    <img src="./img/ocean2.jpeg" class="card-img-top" alt="ocean2">
+                                </div>
 
-                            <div class="tab-pane fade" id="forests" role="tabpanel" aria-labelledby="forests-tab-mid forests-tab-top">Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.</div>
+                                <div class="card">
+                                    <img src="./img/ocean3.JPG" class="card-img-top" alt="ocean3">
+                                </div>
 
-                            <div class="tab-pane fade" id="deserts" role="tabpanel" aria-labelledby="desert-tab-mid desert-tab-top">
+                                <div class="card">
+                                    <img src="./img/ocean4.JPG" class="card-img-top" alt="ocean4">
+                                </div>
+
+                                <div class="card">
+                                    <img src="./img/ocean6.JPG" class="card-img-top" alt="ocean6">
+                                </div>
+
+                                <div class="card">
+                                    <img src="./img/ocean7.JPG" class="card-img-top" alt="ocean7">
+                                </div>
+
+                                <div class="card">
+                                    <img src="./img/ocean8.JPG" class="card-img-top" alt="ocean8">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="forests" role="tabpanel" aria-labelledby="forests-tab-mid forests-tab-top">
+                            <div class="card-columns">
+                                <div class="card">
+                                    <img src="./img/forest1.png" class="card-img-top" alt="forest1">
+                                </div>
+
+                                <div class="card">
+                                    <img src="./img/forest2.jpg" class="card-img-top" alt="forest2">
+                                </div>
+
+                                <div class="card">
+                                    <img src="./img/forest3.JPG" class="card-img-top" alt="forest3">
+                                </div>
+
+                                <div class="card">
+                                    <img src="./img/forest4.JPG" class="card-img-top" alt="forest4">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="deserts" role="tabpanel" aria-labelledby="desert-tab-mid desert-tab-top">
+                            <div class="card-columns">
                                 <div class="card">
                                     <img src="./img/desert1.png" class="card-img-top" alt="desert1">
                                 </div>
@@ -287,13 +377,39 @@
                                     <img src="./img/desert5.JPG" class="card-img-top" alt="desert5">
                                 </div>
                             </div>
+
                         </div>
 
+                        <div class="tab-pane fade" id="lakes" role="tabpanel" aria-labelledby="lake-tab-mid lake-tab-top">
+                            <div class="card-columns">
+                                <div class="card">
+                                    <img src="./img/lake1.png" class="card-img-top" alt="lake1">
+                                </div>
+
+                                <div class="card">
+                                    <img src="./img/lake3.jpeg" class="card-img-top" alt="lake3">
+                                </div>
+
+                                <div class="card">
+                                    <img src="./img/lake4.jpeg" class="card-img-top" alt="lake4">
+                                </div>
+
+                                <div class="card">
+                                    <img src="./img/lake5.jpeg" class="card-img-top" alt="lake5">
+                                </div>
+
+                                <div class="card">
+                                    <img src="./img/lake6.jpg" class="card-img-top" alt="lake6">
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- CONTACT FORM AREA -->
     <div id="contact-container" class="sfooter">
         <div class="sfooter-content">
 
@@ -308,7 +424,9 @@
                     <div class="contact col-md-6">
 
                         <!-- BEGIN CONTACT FORM -->
-                        <h2>Contact Me</h2>
+                        <h2>By Contacting Me</h2>
+                        <h3>with an email</h3>
+                        <h4>to get started!</h4>
                         <form action="./apis/" id="contact" method="post" novalidate>
                             <div class="form-group">
                                 <label for="name">Name</label>
@@ -367,8 +485,7 @@
 
 <footer id="foot" class="py-4 text-black">
     <div class="container">
-        <a class="text-black" href="https://bootcamp-coders.cnm.edu/class-materials/jquery-validated-captcha-form/"
-           target="_blank">Documentation</a> | <a class="text-white" href="https://github.com/rlewis2892/pwp-form-demo"
+         <a class="text-white" href="https://github.com/DylanDeraad/natures-best-angle"
                                                   target="_blank">GitHub</a>
     </div>
 </footer>

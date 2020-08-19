@@ -23,9 +23,25 @@
    text-align: center;
 }
 #FeaturedArtist {
+    display: flex;
     text-align: center;
-
 }
+
+#myartisttab {
+    background-color: #3C5351;
+    color: #BEC7AC;
+}
+
+#stockgirlartist {
+    background-color: #3C5351;
+    color: #BEC7AC;
+}
+
+#stockguyartist {
+    background-color: #3C5351;
+    color: #BEC7AC;
+}
+
 #becomeArtistTittle {
     text-align: center;
 }
@@ -93,6 +109,11 @@
 #images {
     margin-left: 10px;
 }
+
+#contact-container {
+    padding-bottom: 1rem;
+}
+
 #foot {
-    background-color: #182938;
+    background-color: #2F4648;
 }
