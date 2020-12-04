@@ -24,6 +24,7 @@
 }
 #tittle {
    text-align: center;
+    font-family: "MS Gothic";
 }
 #FeaturedArtist {
     display: flex;
